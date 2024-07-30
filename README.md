@@ -1,22 +1,21 @@
-# ViaCep Android App
+# ToggleButton Android App
 
 ![Badge Status](https://img.shields.io/badge/status-active-brightgreen)
-![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?logo=android-studio&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white)
 
 ## Descrição
-
-O ViaCep Android App é uma aplicação desenvolvida em Kotlin que consome a API pública ViaCep para buscar informações de endereços brasileiros a partir do CEP informado pelo usuário. A aplicação utiliza a arquitetura MVC (Model-View-Controller) para organizar o código e facilitar a manutenção e escalabilidade.
+O ToggleButton Android App é uma aplicação desenvolvida em Java, que permite ao usuário alternar entre dois estados: ligado (ON) e desligado (OFF). Ele é similar a um botão de alternância (toggle switch) e é frequentemente usado para representar um estado binário, como ativar ou desativar uma funcionalidade.
 
 ### GIF de Demonstração
-![GIF do projeto](https://github.com/rfemina/Via-Cep/blob/master/viaCep-gif.gif)
+![GIF do projeto](https://github.com/Paula-Thamyres/ToggleButton/blob/master/ToggleButton.gif)
 
 ### YouTube
-[![Assista ao vídeo](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtu.be/9In1lbcDZew)
+[![Assista ao vídeo](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtu.be/crrLSAeAj0U)
 
 ### Arquivo APK
-[![Arquivo APK](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/rfemina/Via-Cep/blob/master/ViaCep.apk)
+[![Arquivo APK](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Paula-Thamyres/ToggleButton/blob/master/ToggleButton.apk)
 
 ## Índice
 
@@ -35,8 +34,8 @@ Siga os passos abaixo para configurar e rodar o projeto em sua máquina local.
 
 1. Clone o repositório:
     ```sh
-    git clone https://github.com/seu-usuario/Via-Cep.git
-    cd Via-Cep
+    git clone https://github.com/Paula-Thamyres/ToggleButton.git
+    cd ToggleButton
     ```
 
 2. Abra o projeto no Android Studio:
@@ -52,18 +51,14 @@ Siga os passos abaixo para configurar e rodar o projeto em sua máquina local.
 ## Uso
 
 1. Abra o aplicativo no seu dispositivo Android.
-2. Digite um CEP válido no campo de texto.
-3. Clique em "Buscar".
-4. O endereço correspondente ao CEP será exibido na tela.
+2. Realize a interação com o componente ToggleButton com a opção Ligar.
+3. Realize a interação com o componente ToggleButton com a opção Desligar.
+4. Fechar a aplicação para encerrar a execução.
 
 ## Arquitetura
 
-O projeto segue a arquitetura MVC (Model-View-Controller), entretanto com as nomenclaturas alteradas:
+O projeto segue a arquitetura padrão do Android Studio
 
-- **Model:** Contém a lógica de dados e as classes de modelo.
-- **Ui:** Responsável pela interface do usuário.
-- **Repository:** Gerencia a comunicação entre o Model e a View.
-- **Api:** Interface para consumo e conversão do arquivo em Json 
 
 ### Estrutura de Pastas
 
@@ -71,16 +66,8 @@ O projeto segue a arquitetura MVC (Model-View-Controller), entretanto com as nom
 - src/
   - main/
     - java/
-      - com/projetosrafaelfemina/viacep/
-        - api/
-          - Api.class
-        - model/
-          - Adress.class
-        - repository/
-          - CepRepository.class
-        - ui/
-          - ActivityUtils.class
-      - MainActivity.class
+      - com/paula/togglebutton/
+       - MainActivity.class
     - res/
       - layout/
         - activity_main.xml
@@ -89,20 +76,13 @@ O projeto segue a arquitetura MVC (Model-View-Controller), entretanto com as nom
 
 Objetivo Principal:
 
-Permitir que os usuários busquem informações de endereços a partir do CEP.
-
-Requisitos:
-
-  - Consumir a API ViaCep.
-  - Exibir informações de endereço de maneira clara.
-  - Manter uma arquitetura organizada (MVC).
+Permitir que os usuários interajam como o componente ToggleButton.
 
 ## Tecnologias Utilizadas
-  - Kotlin
+  - Java
   - Android Studio
-  - Retrofit - Para consumo da API
-  - Gson - Para parseamento de JSON
-  - ViaCep API
+  - Gradle
+  - Componentes
 
 
 ## Contribuição
